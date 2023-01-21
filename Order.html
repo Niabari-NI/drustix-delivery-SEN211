@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drumstix Delivery</title>
+    <link href="Style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width:device-width, initial-scale:1.0">
+  </head>
+  <body style=" background-color:#FFDAB9; margin:0;">
+    <div class="cont">
+      <div class="hed">
+        <a href="index.html" style="font-family:playbill; font-size:30px;" class="hov">Home  </a>
+        <a href="Order.html" style="font-family:playbill; font-size:30px;" class="hov">Order  </a>
+        <a href="Store.html" style="font-family:playbill; font-size:30px;" class="hov">Store  </a>
+        <a href="AboutUs.html" style="font-family:playbill; font-size:30px;" class="hov">About Us</a>
+
+        <a href="Cuvio.html">
+        <span class="cart">
+          🛒
+          <span>
+            <label id="count"></label>
+          </span>
+        </span>
+      </a>
+      </div>
+      <!--<div class="impos">
+        <a href="index.html" style="font-family:playbill; font-size:30px;" class="hov"><img width="200px" height="100px" src="Pic/Drumstix_logo.png" alt="Drumstix Logo"></a>
+      </div>-->
+
+      <p style="text-align:center; font-size:50px; color:Red; font-family:Freestyle Script;">Here's Our Menu</p>
+
+      <div class = "main">
+
+        <p style="font-size:50px; font-family:Footlight MT Light;">Main Dishes...</p>
+        <hr>
+        <table>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/meal2.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Rice and Chiken</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Comes as: Jollof or Fried</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦1,000</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/meal1.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Chips and Chiken</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Comes with ketchup free</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦1,600</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/meal3.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Chips</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Comes with ketchup free</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦1,000</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/meal4.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Rice, Chiken(2 pieces), and a drink</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Comes as: Jollof or Fried</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Drinks include: Pepsi, Fanta, Coke, Sprite, and Mirinda</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦1,900</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/meal5.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Chips, Chiken(2 pieces), and a drink</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Comes with free ketchup</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Drinks include: Pepsi, Fanta, Coke, Sprite, and Mirinda</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦2,500</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/meal6.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Rice, Chiken, Coleslaw, and a drink</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Comes as: Jollof or Fried</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Drinks include: Pepsi, Fanta, Coke, Sprite, and Mirinda</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦1,400</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+        </table>
+
+        <p style="font-size:50px; font-family:Footlight MT Light;">Sides...</p>
+        <hr>
+        <table>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/side1.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Single piece Chiken</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦750</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/side2.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Coleslaw</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦350</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+        </table>
+
+        <p style="font-size:50px; font-family:Footlight MT Light;">Snacks...</p>
+        <hr>
+        <table>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/snack1.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Chiken pie</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦500</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/snack2.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Scotch Egg</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦350</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/snack3.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Meat pie</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦500</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/snack4.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Beef roll</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦400</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Food/snack5.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Doughnuts</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦250</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+        </table>
+
+        <p style="font-size:50px; font-family:Footlight MT Light;">Specials...</p>
+        <hr>
+        <table>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Pic/burger-meal.png" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Combo Burger</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Consists of: Chips, One Chicken Burger, and a drink</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Drinks include: Pepsi, Fanta, Coke, Sprite, and Mirinda</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦2,300</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Pic/kids-meals-2.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">KIDS MEAL (CHICKEN AND CHIPS)</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Consists of: Chips, Ketchup, One peice of chicken, and Capri~son</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦1,500</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Pic/kids-meal-1.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">KIDS MEAL (RICE)</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Consists of: Chips, Ketchup, One peice of chicken, and Capri~son</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Rice comes as: Jollof or Fried</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦1,000</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+        </table>
+
+        <p style="font-size:50px; font-family:Footlight MT Light;">Drinks...</p>
+        <hr>
+        <table>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Pic/drink1.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Pulpy drink</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦350</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Pic/drink2.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Drinks</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Drinks include: Pepsi, Fanta, Coke, Sprite, and Mirinda</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦300</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="300px" height="300px" src="Pic/water.jpg" alt="A dish">
+            </td>
+            <td>
+              <p style="font-size:30px; font-family:Forte; color:red;">Water</p>
+              <p style="font-size:20px; font-family:Times New Roman;">Price: ₦200</p>
+              <button class="ob" onclick="main()">Add To Cart</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--
+    <form>
+      <fieldset>
+        <legend>Enter details:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="pnum">Phone Number</label>
+        <input type="text" id="pnum" name="pnum"><br><br>
+
+        <label for="adrs">Address:</label>
+        <input type="text" id="adrs" name="adrs"><br><br>
+
+        <label for="birthday">Meal name and specifications</label>
+        <textarea id="meal" name="meal" rows="10" cols="30"><br><br>
+
+        <input type="button" onclick="add()" value="Save">
+        <input type="button" onclick="submit" value="Submit">
+      </fieldset>
+    </form>
+  -->
+  <fieldset style="color: orange; font-family:cursive; font-size:30px; border:3px; border-radius: 10px; border-color:Black;">
+    <legend>Want to place order</legend>
+    <ol>
+      <li><a href="mailto:info@drumstix.com.ng" style="color:red; text-decoration: none;" target="_blank">Click This Text</a></li>
+      <li>Type in your Name, Address and Phone number</li>
+      <li>Type in your selected meals</li>
+      <li>Add any changes you would like to make to your dish, if any</li>
+      <li>And send!!</li>
+    </ol>
+  </fieldset>
+      <footer style="background-color:#191970; color:#FFFFFF; font-size:15px; padding:1%;">
+        <p>We are open everyday!</p>
+        <p>From: 7:00AM.....11:00pm</p>
+        <p>Contact Us</p>
+        <p><a href="mailto:info@drumstix.com.ng" style="color:grey">info@drumstix.com.ng</a></p>
+        <p>Our customer service: </p>
+        <p>09094160303</p>
+      </footer>
+    </div>
+
+    <script>
+
+      count = 0;
+      function counterFunc(){
+       count++;
+       document.getElementById("count").innerHTML = count;
+      }
+      /*
+      function add(){
+        var new_data = document.getElementById('input').value;
+
+        if(localStorage.getItem('meal')==null){
+          localStorage.setItem('meal', '[]');
+        }
+
+        var old_data = JSON.parse(localStorage.getItem('meal'));
+        old_data.push(new_data);
+
+        localStorage.setItem('meal', JSON.stringify(old_data));
+      }
+      */
+      function main(){
+       counterFunc();
+      }
+    </script>
+  </body>
+</html>

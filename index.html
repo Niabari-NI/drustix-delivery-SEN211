@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drumstix Delivery</title>
+    <link href="Style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width:device-width, initial-scale:1.0">
+  </head>
+  <body style=" background-color:#ffffff; margin:0;">
+    <div class="cont">
+      <div class="hed">
+        <a href="index.html" style="font-family:playbill; font-size:30px;" class="hov">Home  </a>
+        <a href="Order.html" style="font-family:playbill; font-size:30px;" class="hov">Order  </a>
+        <a href="Store.html" style="font-family:playbill; font-size:30px;" class="hov">Store  </a>
+        <a href="AboutUs.html" style="font-family:playbill; font-size:30px;" class="hov">About Us</a>
+      </div>
+      <!--<div class="impos">
+        <a href="index.html" style="font-family:playbill; font-size:30px;" class="hov"><img width="200px" height="100px" src="Pic/Drumstix_logo.png" alt="Drumstix Logo"></a>
+      </div>-->
+      <div class="slide">
+          <p style="color:orange; text-align:center; font-size:50px; font-family:brush script mt;">Some Yummy Promos</p>
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <a href="Order.html" style="font-family:playbill; font-size:30px;" class="hov"><img width="100%" height="500px" src="SP/HNM_promo.jpg" alt="Promo meal"></a>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <a href="Order.html" style="font-family:playbill; font-size:30px;" class="hov"><img width="100%" height="500px" src="SP/HNM_promo_2.jpg" alt="Promo meal"></a>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <a href="Order.html" style="font-family:playbill; font-size:30px;" class="hov"><img width="100%" height="500px" src="SP/HNM_promo_3.jpg" alt="Promo meal"></a>
+          </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <a href="Order.html" style="text-decoration: none;"><p style="text-align:center; font-size:50px; color:Red; font-family:Freestyle Script;">What's On The Menu?</p></a>
+      <div>
+        <table>
+          <tr>
+            <td><img width="370px" height="370px" src="Food/meal1.jpg" alt="A dish"></td>
+            <td><img width="370px" height="370px" src="Food/meal2.jpg" alt="A dish"></td>
+            <td><img width="370px" height="370px" src="Food/meal3.jpg" alt="A dish"></td>
+            <td><img width="370px" height="370px" src="Food/meal4.jpg" alt="A dish"></td>
+          </tr>
+          <tr>
+            <td><img width="370px" height="370px" src="Food/snack1.jpg" alt="A Snack"></td>
+            <td><img width="370px" height="370px" src="Food/snack2.jpg" alt="A Snack"></td>
+            <td><img width="370px" height="370px" src="Food/snack3.jpg" alt="A Snack"></td>
+            <td><img width="370px" height="370px" src="Food/snack4.jpg" alt="A Snack"></td>
+          </tr>
+        </table>
+      </div>
+      <div style="background-color:grey;">
+        <p style="text-align:center; font-size:50px; color:orange; font-family:brush script mt;">Keep Up With Our</p>
+        <p style="text-align:center; font-size:50px; color:white; font-family:Harlow Solid Italic;">INSTAGRAM GALLERY</p>
+      </div>
+      <footer style="background-color:#191970; color:#FFFFFF; font-size:15px; padding:1%;">
+        <p>We are open everyday!</p>
+        <p>From: 7:00AM.....11:00pm</p>
+        <p>Contact Us</p>
+        <p><a href="mailto:info@drumstix.com.ng" style="color:grey">info@drumstix.com.ng</a></p>
+        <p>Our customer service: </p>
+        <p>09094160303</p>
+      </footer>
+    </div>
+
+    <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 10000);
+    }
+    </script>
+  </body>
+</html>
